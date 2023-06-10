@@ -18,4 +18,18 @@ public class Google {
         String tittle = Driver.getDriver().getTitle();
         Assert.assertTrue("Tittle failed",tittle.contains(testData));
     }
+
+    public void googleImage(){
+        Driver.getDriver().get("https://google.com");
+        System.out.println("checking images");
+        Driver.quit();
+    }
+
+
+
+
+
+
+
+
 }
